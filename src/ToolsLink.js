@@ -22,8 +22,8 @@ const ToolsLinks = ({url, heading}) => {
                 setError(err.message);
                 setIsPending(false);
             })
-         }, 10);
-    },[]); 
+         }, 1);
+    },[url]); 
     return (
         <div>
             {error && <div>{error}</div>}
